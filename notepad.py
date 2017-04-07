@@ -3,7 +3,6 @@ A simple notepad used to learn about wxPython.
 Created using Python 2.7 on Windows 10. There have been issues running
 the code in Linux. Why, I don't know yet.
 
-Added this comment so there was a change in the file.
 Author: Mark Donoghue (mark.w.donoghue@gmail.com)
 """
 
@@ -48,7 +47,6 @@ class MyFrame(wx.Frame):
 		msg.Destroy()
 	
 	def OnOpen(self, e):
-		""" Open a file"""
 		self.dirname = ''
 		dlg = wx.FileDialog(self, "Choose a file", self.dirname, "", "*.*", wx.OPEN)
 		if dlg.ShowModal() == wx.ID_OK:
@@ -62,7 +60,6 @@ class MyFrame(wx.Frame):
 		
 	def OnSave(self, e):
 		self.dirname = 'Untitled.txt'
-		#print self.control.GetValue();
 		dlg = wx.FileDialog(self, "Choose a file", self.dirname, "", "*.*", wx.SAVE | wx.OVERWRITE_PROMPT)
 		if dlg.ShowModal() == wx.ID_OK:
 			txt = self.control.GetValue()
