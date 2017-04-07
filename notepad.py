@@ -3,6 +3,7 @@ A simple notepad used to learn about wxPython.
 Created using Python 2.7 on Windows 10. There have been issues running
 the code in Linux. Why, I don't know yet.
 
+Added this comment so there was a change in the file.
 Author: Mark Donoghue (mark.w.donoghue@gmail.com)
 """
 
